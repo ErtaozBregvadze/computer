@@ -1,0 +1,54 @@
+h1 {
+    color: red;
+    font-size: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    background-color: aqua;
+}
+
+body{
+    background-color: rgb(198, 253, 253);
+    color: brown;
+    
+.open-sans-<uniquifier> {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+}
+
+
+
+p {
+    text-align: center;
+    color: blue;
+}
+
+a {
+    color: blueviolet;
+}
+ 
+h2 {
+    color: burlywood;
+}
+
+#იმერეთი {
+    color: chartreuse;
+    font-size: 50px;
+}
+
+
+
+
+content
+padding
+border
+margin
+
+

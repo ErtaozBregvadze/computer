@@ -1,0 +1,92 @@
+
+<!--<div class="container">
+    <p id="aboutUs">about us text</p>
+    <p>portfolio text</p>
+</div>-->
+<div id="container" onclick="doSomething()">
+    აბა დამაჭირე
+</div>
+
+<script>
+    const aboutUs = document.querySelector(".container p"); //პირველივე პარაგრაფი
+    const texts = document.querySelectorAll(".container p"); //[ორივე პარაგრაფი მასივი]
+    console.log(texts);
+
+    const aboutUs =  document.getElementById("aboutUs"); //id
+    const containers =  document.getElementsByClassName("container"); //კლასის სახელით
+    const pharagraps =  document.getElementsByTagName("p"); //თაგის სახელით
+    console.log(pharagraps);
+
+    const container = document.querySelector(".container");
+    const aboutUs = document.getElementById(".aboutus");
+    console.log(aboutUs.getAttribute("id"));
+    aboutUs.getAttribute("id, newId"); //ატრიბუტის შეცვლა
+    console.log(container.children);
+    console.log(container.parentElement);
+     
+    console.log(container.classList); //[კლასების სია]
+    container.classList.add(""); //ახალი კლასის დამატება
+    container.classList.remove(); //კლასისი წაშლა
+    container.classList.toggle(); //წაშლა ან დმატება
+    container.className = ""; //პირდაპირ რისი გადაწერაც მინდა */
+</script>
+
+<script>
+    /*const container = document.querySelector(".container");
+    container.innerHTML = "<span>salami</span>"; //html ში მონაცემის ჩაწერა
+    console.log(container.innerHTML); 
+    container.remove(); //ელემენტის ამოშლა*/
+</script>
+<script>
+    const container = document.querySelector(".container")
+    container.style.margin = "10px"
+    container.style.paddingBottom = "50px"
+    container.style.backgroundColor = "red"*/
+</script>
+<script>
+    function doSomething(event) {
+        console.log("container clicked", event); //onclick, onscroll, onmouseover, onload
+    }
+
+    const container = document.querySelector("#container");
+    container.addEventListener("click", doSomething); //ფუნქციიის გამოძახება
+</script>
+
+<script>
+    //callback ფუნქცია
+    function runXTimes(times, f) {
+        for(let i = 0; i<times; i++) {
+            f(i);
+        }        
+    }
+
+    function gaumarjos(text) {
+        console.log(`jos ${text}`);        
+    }
+
+    runXTimes(3, gaumarjos)
+
+    runXTimes(3, (text) => {
+        console.log(`jos ` + text);        
+    } );
+</script>
+
+
+აირჩიე სხვა სახელი
+input type="text" id="username">
+<div class="error"></div>
+
+
+<script>
+    const username = document.getElementById("username");
+    const error = document.querySelector(".error");
+
+    function onUsernameChange(e) {
+        if(e.target.value == "ertaoz") {
+            error.style.color = "red"
+            error.innerHTML = "ასეთი მომხმარებელი უკვე არსებობს"
+        }             
+    }
+   
+    username.addEventListener("input", onUsernameChange)
+</script>

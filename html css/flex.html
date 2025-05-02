@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>normalflow</title>
+    <style>
+        div, span {
+            background-color: red;
+            border: 3px solid black;
+            font-size: 40px;
+            text-align: center;
+            
+        }
+
+
+        .inline-block{
+            display: inline-block;
+        }
+
+        .flexcontainer{
+            all: unset;
+            height: 600px;  
+            background-color: aqua; 
+
+            display: flex;
+            align-items: flex-start;
+            
+
+            
+        }
+
+
+
+
+        .flexcontainer > *{
+            flex-basis: 90px;
+            /*flex-grow: 1;*/
+            flex-shrink: 1;
+
+                        
+        }
+
+
+
+
+        #div2{
+            order: 3;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">
+        <div style="order:1;">1</div>
+        <div id="div2">2</div>
+        <div>3</div>
+
+        <span>4</span>
+        <span style="order: -1;">5</span>
+        <span>6</span>
+
+        <div class="inline-block">7</div>
+        <div class="inline-block">8</div>
+        <div style="order: 2;" class="inline-block">9</div>
+    </div>
+
+</body>
+</html>

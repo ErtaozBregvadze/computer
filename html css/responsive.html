@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin:0 auto;
+        }
+
+ 
+        header {
+            background-color: chocolate;
+            text-align: center;
+        }
+
+
+        main {
+            display: flex;
+            gap: 12px;
+        }
+
+
+        .menu {
+            flex-basis: 250px;
+        }
+        
+        .menu__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .menu__item {
+            background-color: chocolate;
+            padding: 8px;            
+        }
+   
+        .content {
+            flex: 1;
+            background-color: chocolate;
+        }
+
+        aside {
+            flex-basis: 250px;
+            background-color: chocolate;
+        }
+        
+
+        
+        /*ტელეფონისთვის*/
+        @media screen and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            aside {
+                flex-basis: auto;
+            }
+        }
+        
+        /*პლანშეტისთვის*/
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            main {
+                flex-wrap: wrap;
+            }
+
+            .menu {
+                flex-basis: 100%;
+            }
+
+            .menu__list {
+                flex-direction: row;
+            }
+
+            .menu__item {
+                flex: 1;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container"> 
+        <header>
+            <h1> გამარჯობაა</h1>
+        </header>
+
+
+        <main>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">სახლი</li>
+                    <li class="menu__item">პროდუქტი</li>
+                    <li class="menu__item">ჩვენს შესახებ</li>
+                    <li class="menu__item">სერვისები</li>
+                    <li class="menu__item">კონტაქტი</li>                    
+                </ul>
+            </nav>
+
+            <div class="content">
+                content
+            </div>
+
+            <aside>
+                sidebar
+            </aside>
+        </main>
+
+
+        <footer>
+
+        </footer>
+    </div>
+
+        
+</body>
+</html>

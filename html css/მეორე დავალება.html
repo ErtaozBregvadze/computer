@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მეორე დავალება</title>
+    <style>
+        body {            
+            max-width: vw;
+            max-height: 1080px;
+            width: 100%;
+            height: 100%;
+            background-color: #ecf2ff;
+        }
+
+        .mainbox {
+            display: flex;
+            width: 736px;
+            height: 512px;
+            background-color: white;
+            position: relative;
+            align-content: center;
+            margin: 150px auto;           
+            border-radius: 32px;
+        }
+
+        .smallbox {
+            display: flex;
+            width: 368px;
+            height: 512px;
+            border-radius: 32px; 
+            padding: 40px;       
+            box-sizing: border-box; 
+            flex-direction: column;  
+            flex-wrap: wrap; 
+        }
+
+        .box1 { 
+            width: 368px;
+            height: 512px;
+            border-radius: 32px;
+            background-image: linear-gradient(180deg, #7755ff, #6943ff, #2f2ce9);
+            align-items: center;
+            text-align: center;            
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 368px;
+            height: 512px;
+            border-radius: 32px;            
+            background-color: white;  
+            font-size: 20px;           
+        }
+
+        .circle {            
+            height: 200px;
+            width: 200px;
+            border-radius: 200px;            
+            text-align: center;
+            background-image: linear-gradient(180deg, #4D21C9, #2421c950, #2421c907);
+            margin-top: 20px;
+            line-height: 30px;
+            
+        }
+
+        h1 {
+            color: rgba(255, 255, 255, 0.959);
+            font-size: 70px;
+        }
+
+        h2 {
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 30px;
+        }
+
+        h3 {
+            color: rgba(255, 255, 255, 0.678);
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.678);
+            font-size: 18px;
+        }
+
+        .box2 h2 {
+            color: #303B59;
+            line-height: 10px;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+
+        .box2__item {
+            /*width: 288px;
+            height: 56px;  */         
+            border-radius: 10px;  
+            padding: 15px;            
+        }
+        
+        .box2 div:first-of-type {
+            color: #FF5555;
+            background-color: rgba(255, 85, 85, 0.08); 
+        }
+        .box2 :nth-of-type(2){
+            color: #FFB21E;
+            background-color: rgba(255, 176, 30, 0.08); 
+        }
+        .box2 :nth-of-type(3) {
+            color: #00BB8F;
+            background-color: rgba(0, 187, 143, 0.08);  
+        }
+        .box2 :nth-of-type(4) {
+            color: #1125D6;
+            background-color: rgba(17, 37, 214, 0.08); 
+        }
+        .box2 :nth-of-type(5) {
+            color: #ffffff;
+            background-color: rgb(48, 59, 89);
+            text-align: center;
+            padding: 15px;
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+
+        .box2 :nth-of-type(5):hover {
+            background-image: linear-gradient(180deg, #7755ff, #6943ff, #2f2ce9);
+            cursor: pointer;
+        }
+
+        span {
+            font-weight: bolder;
+            color: rgba(48, 59, 89, 0.959);
+        }
+
+        div>span {
+            position: absolute;
+            right: 50px;
+        }
+
+        .hndrd {
+            color: rgba(48, 59, 89, 0.541);
+        }
+
+        @media screen and (max-width: 768px) {
+
+            body {   
+                max-width: vw;
+                max-height: 809px;
+                width: 100%;
+                height: 100%;               
+                background-color: #ecf2ff;
+            }
+            
+            .mainbox {
+                all: unset;
+                max-width: vw;
+                max-height: vh;
+                width: 100%;
+                height: 100%;
+                border-radius: 0; 
+                position: absolute;
+                display: flex;
+                flex-direction: column;                
+                background-color: white;             
+            }
+        
+            .box1 { 
+                all: unset;
+                width: vw;                
+                height: 35%;
+                border-radius: 32px;
+                background-image: linear-gradient(180deg, #7755ff, #6943ff, #2f2ce9);
+                padding: 5px;                
+                height: 512px;
+                border-radius: 0;
+                border-bottom-right-radius: 32px;
+                border-bottom-left-radius: 32px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }          
+            
+            .circle {            
+                height: 140px;
+                width: 140px;
+                border-radius: 140px;                
+                margin-top: 0px;
+                line-height: 10px;
+            }
+
+            .box2 {
+                all: unset;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: vw;
+                height:65%;
+                border-radius: 32px;            
+                background-color: white;  
+                font-size: 20px;     
+                margin: 30px;      
+            }
+        }
+
+        
+
+
+    </style>
+</head>
+<body>    
+    <main>
+        <div class="mainbox">
+            <div class="smallbox box1">
+                <div>
+                    <h3>
+                        Your Result
+                    </h3>
+                </div>
+                <div class="circle">
+                    <h1>76</h1> 
+                    <p>of 100 </p>
+                    
+                </div>
+                <div>
+                    <h2>Great</h2> <p>Your performance exceed 65% of the people conducting the test here!</p>
+                </div>
+            </div>
+
+            <div class="smallbox box2">
+                <h2> Summary </h2>
+                <div class="box2__item"> 
+                    <img src="media/iconoir_flash.png" alt="flash"> Reaction <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--> 
+                    <span>
+                        80&nbsp;/&nbsp;<span class="hndrd">100</span>
+                    </span>
+                </div>
+                <div class="box2__item"> 
+                    <img src="media/iconoir_brain.png" alt="brain"> Memory <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;--> 
+                    <span>
+                        92&nbsp;/&nbsp;<span class="hndrd">100</span>
+                    </span>
+                </div>
+                <div class="box2__item"> 
+                    <img src="media/iconoir_chat-remove.png" alt="chat"> Verbal &nbsp; <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;--> 
+                    <span>
+                        61&nbsp;/&nbsp;<span class="hndrd">100</span>
+                    </span>
+                </div>
+                <div class="box2__item"> 
+                    <img src="media/iconoir_eye-empty.png" alt="eye"> Visual  <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;--> 
+                    <span>
+                        73&nbsp;/&nbsp;<span class="hndrd">100</span>
+                    </span>
+                </div>
+                <div>Continue</div>
+            </div>
+            
+        </div>        
+    </main>
+    
+    
+</body>
+</html>
