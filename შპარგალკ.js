@@ -153,6 +153,19 @@ console.log(discount);    //ამოაგდებს 15
 --------------------------------------------------------------------------------------------------------------------------
 ინფორმაციის ტიპებიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიიი
 
+Number - რიცხვები
+Boolean - თრუ ფოლს
+undefined - ინფორმაციის არარსებობა js 
+null - ინფორმაციის არარსებობა dev
+BigInt - დიდი რიცხვები
+string - ტექსტების შესანახად "" ``template literal=`string ${expression}`
+Symbol - სიმბოლო 
+Object 
+
+console.log(typeof.x);
+ 
+
+
 let x;
 let y = 5;
 ley z = null;
@@ -162,12 +175,6 @@ console.log(typeof y);    //ამოაგდებს number
 console.log(typeof z);    //ამოაგდებს object
 
 
-
-null ინფორმაციის არარსებობა dev
-undefined ინფორმაციის არარსებობა js 
-
-
-string 
 
 let userFirstName = "ერთაოზ"
 console.log("გამარჯობა "+ userFirstName);   // ამოაგდებს გამარჯობა ერთაოზ
@@ -221,18 +228,20 @@ while(downloadProgress <= 100) {
 arrayyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy მასივები
 
 
-ნებისმიერი ტიპის ინფორმაცია შეიძლება ჩაიწეროს ერეიში ბრექეთ ნოთეიშენ
+//ნებისმიერი ტიპის ინფორმაცია შეიძლება ჩაიწეროს ერეიში ბრექეთ ნოთეიშენ
 let ertaozTestScores = [70, 80, 90, 100]; 
-ertaozTestScores [3] = 100 ანუ შეიძლება შეიცვალოს ინფორმაცია მესამეზე რაც წერია
+ertaozTestScores [3] = 100 //ანუ შეიძლება შეიცვალოს ინფორმაცია მესამეზე რაც წერია
 console.log(ertaozTestScores[0]);   //ამოგდებს 70 ანუ რიგით მერამდენე ინფორმაცია მინდა ამოაგდოს
 ertaozTestScores [10] 77 // ასეც შეიძლება წინასწარ მიამატო
 
-console.log(ertaozTestScores.length);   // ამოაგდებს 4
+console.log(ertaozTestScores.length);   // ამოაგდებს 4 
 console.log(ertaozTestScores[ertaozTestScores.length - 1]);   // ამოაგდებს ბოლო აითემს
 
 
+
+
 let testResult = [10, 20, 30, 40];
-for (let i = 0; i < testResult.length; i++) {                      //ცვლადი, პირობა, როგორ ვითვლი
+for (let i = 0; i < testResult.length; i++) {                      //ცვლადი, პირობა(სადამდეც ცვლადი იზრდება), როგორ ვითვლი
     console.log(testResult[i]);                                   //რა უნდა დაიწეროს
     
 }
