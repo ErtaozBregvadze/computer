@@ -275,7 +275,7 @@ for(let i = 0; i < tecnologies.length; i++) {
     console.log(`looking for ${tecnologies[i]}`);
     if (tecnologies[i] == search) {
         console.log(`${tecnologies[i]} found`);
-        break
+        break; //წყვეტს ლუპს დროზე ადრე
     }    
 }
 
@@ -284,7 +284,7 @@ const testResult = [10, 20, 51, 64, 27, 55];
 
 for(let i = 0; i < testResult.length; i++) {
     if(testResult[i] < 50) {
-        continue;
+        continue; //წყვეტს კონკრეტულ იტერაციას
     }
     console.log("good job");    
 }
@@ -453,7 +453,7 @@ const welcome = (userFirstName = "", messages = 0) => {
 }    
 console.log(welcome("გიორგი", 5));
 
-//გამარტივებული ვერსია
+//გამარტივებული ვერსია ერთი პარამეტრის შემთხვევაში
 const welcome = userFirstName => `გამარჯობა ${userFirstName}, შენ გაქვს ${messages} მესიჯი`;     
 
 
@@ -518,6 +518,12 @@ const welcomeMessage = "გამარჯობა ერთაოზ";
 const words = welcomeMessage.split(" ");
 console.log(words);
 
+
+const words = ["გამარჯობა", "ერთაოზ"]
+const welcomeMessage = words.join(" ");
+console.log(welcomeMessage);
+
+
 startsWith()
 endWith()
 toUpperCase()
@@ -538,9 +544,6 @@ array.reverse();
 console.log(array); // ამოაგდებს [5,4,3,2,1]; აბრუნებს
 
 
-const words = ["გამარჯობა", "ერთაოზ"]
-const welcomeMessage = words.join(" ");
-console.log(welcomeMessage);
 
 
 
