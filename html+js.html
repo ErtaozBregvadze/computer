@@ -1,11 +1,14 @@
 
-<!--<div class="container">
+<div class="container">
     <p id="aboutUs">about us text</p>
     <p>portfolio text</p>
-</div>-->
+</div>
+
+
 <div id="container" onclick="doSomething()">
     აბა დამაჭირე
 </div>
+
 
 <script>
     const aboutUs = document.querySelector(".container p"); //პირველივე პარაგრაფი
@@ -17,6 +20,8 @@
     const pharagraps =  document.getElementsByTagName("p"); //თაგის სახელით
     console.log(pharagraps);
 
+
+
     const container = document.querySelector(".container");
     const aboutUs = document.getElementById(".aboutus");
     console.log(aboutUs.getAttribute("id"));
@@ -24,6 +29,8 @@
     console.log(container.children);
     console.log(container.parentElement);
      
+
+
     console.log(container.classList); //[კლასების სია]
     container.classList.add(""); //ახალი კლასის დამატება
     container.classList.remove(); //კლასისი წაშლა
@@ -32,17 +39,19 @@
 </script>
 
 <script>
-    /*const container = document.querySelector(".container");
+    const container = document.querySelector(".container");
     container.innerHTML = "<span>salami</span>"; //html ში მონაცემის ჩაწერა
     console.log(container.innerHTML); 
-    container.remove(); //ელემენტის ამოშლა*/
+    container.remove(); //ელემენტის ამოშლა
 </script>
+
 <script>
     const container = document.querySelector(".container")
     container.style.margin = "10px"
     container.style.paddingBottom = "50px"
     container.style.backgroundColor = "red"*/
 </script>
+
 <script>
     function doSomething(event) {
         console.log("container clicked", event); //onclick, onscroll, onmouseover, onload
@@ -52,9 +61,10 @@
     container.addEventListener("click", doSomething); //ფუნქციიის გამოძახება
 </script>
 
+
 <script>
     //callback ფუნქცია
-    function runXTimes(times, f) {
+    function runXTimes(times, f) { 
         for(let i = 0; i<times; i++) {
             f(i);
         }        
@@ -73,7 +83,7 @@
 
 
 აირჩიე სხვა სახელი
-input type="text" id="username">
+<input type="text" id="username">
 <div class="error"></div>
 
 
@@ -90,6 +100,8 @@ input type="text" id="username">
    
     username.addEventListener("input", onUsernameChange)
 </script>
+
+
 
 <script>
     let x = "10+5"
