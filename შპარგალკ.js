@@ -560,9 +560,8 @@ function gaumarjos(text) {
     console.log(`jos ${text}`);        
 }
 
+
 runXTimes(3, gaumarjos)
-
-
 runXTimes(3, (text) => {
     console.log(`jos ` + text);        
 } );
@@ -593,7 +592,7 @@ console.log(newArray);
 
 find მოძებნა
 const array = [1,2,3,4,5,6,7,8,9,];
-const found = array.find(item => item == 7);
+const found = array.find(item => item == 7); 
 console.log(found);
 //7
 
@@ -638,6 +637,62 @@ JSON.parse() //სტრინგიდან აკეთებს ობიე
 x2 = structuredClone(x) //დაკოპირება
 
 //კონსტში ცვლადს ვერ შეცვლი, შეცვლი მარტო ცვლადის შიგნით მონაცემებს
+
+
+
+
+...rest ოპერატორი // ფუნქციის პარამეტრის გაუსასრულოება
+function students(saxeli1, saxeli2, ...danarheni) {
+    console.log("danarheni = ", danarcheni); 
+}
+
+destructure ცვლადის დაშლა // ერეიზე ოთხკუთხდი ფრჩხილები ობიექტზე კლაკნილი 
+const = ["ertaoz", "bregvadze", "30"]
+const [firstName, lastName, age] = mentor;
+
+
+a = 10
+b = 20
+
+[a, b] = [b, a]
+
+
+//ცვლადიდან ერთი ინფორმაციის ამოღება
+const mentor = {
+    firstName: "ertaoz",
+    lastName: "bregvadze",
+    age: 30,
+    password: "123456"
+}
+
+const {password, ...user} = mentor;
+
+console.log("password = ", password);
+console.log("user =", user);
+
+
+//for off for in
+const allScores = [10,20,30];
+
+for(const score of allScores) {
+    console.log(score);
+}
+
+for(const idx in allScores) {
+    console.log(idx);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
