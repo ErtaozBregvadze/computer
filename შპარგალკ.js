@@ -641,12 +641,12 @@ x2 = structuredClone(x) //დაკოპირება
 
 
 
-...rest ოპერატორი // ფუნქციის პარამეტრის გაუსასრულოება
+//...rest ოპერატორი // ფუნქციის პარამეტრის გაუსასრულოება
 function students(saxeli1, saxeli2, ...danarheni) {
     console.log("danarheni = ", danarcheni); 
 }
 
-destructure ცვლადის დაშლა // ერეიზე ოთხკუთხდი ფრჩხილები ობიექტზე კლაკნილი 
+//destructure ცვლადის დაშლა // ერეიზე ოთხკუთხდი ფრჩხილები ობიექტზე კლაკნილი 
 const = ["ertaoz", "bregvadze", "30"]
 const [firstName, lastName, age] = mentor;
 
@@ -678,12 +678,14 @@ for(const score of allScores) {
     console.log(score);
 }
 
-for(const idx in allScores) {
+for(const idx in allScores) { //ობიექტის შემთხვევაში ფროფერთიების დასახელებებს გვაძლევს
     console.log(idx);
 }
 
 
-
+//hoisting იმპორტებს ააგდებს ფაილის თავში
+let ან const შემთხვევაში ჯერ ცვლადს განსაზღვრავ და მერე შეძლებ მაგის ქვედა ხაზზე გამოყენებას
+function hoisting ეხება მარტო function declaration სინტაქსს
 
 
 
